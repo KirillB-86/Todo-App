@@ -4,10 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
     <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css" type="text/html">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" type="text/html">
   </head>
   <body>
-    <h1>ToDo App</h1>
+    <h1>Todo App</h1>
+    <div class="container container-2">
+      <input
+        id="addTodoTextInput"
+        type="text"
+        placeholder="Add todo and press Enter"
+        onfocus="this.placeholder = ''"
+      />
+      <button class="btn btn-add" onclick="handlers.addTodo()">Add</button>
+    </div>
+    
+    </div>
+    <ul></ul>
+    <div class="container container-4">
+      </button>
+      <button class="btn btn-top" onclick="handlers.toggleAll()">
+        Toggle All
+      </button>
+      <button class="btn btn-delte-all" onclick="handlers.deleteAll()">
+        Delete All
+      </button>
+    <script src="./app.js"></script>
   </body>
 </html>
